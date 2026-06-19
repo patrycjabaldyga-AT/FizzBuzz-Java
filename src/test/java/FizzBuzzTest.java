@@ -15,9 +15,10 @@ class FizzBuzzTest {
 
         // Act:
         ArrayList<String> result = fizzBuzz.getFizzBuzz(startingNumber,endingNumber);
+        String expected = "[1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz]";
 
         //Assert:
-        assertEquals("[1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz]",String.valueOf(result));
+        assertEquals(expected,String.valueOf(result));
     }
 
     @Test
@@ -30,9 +31,10 @@ class FizzBuzzTest {
 
         // Act:
         ArrayList<String> result = fizzBuzz.getFizzBuzz(startingNumber,endingNumber);
+        String expected = "1";
 
         //Assert:
-        assertEquals("1",result.getFirst());
+        assertEquals(expected,result.getFirst());
     }
 
     @Test
@@ -45,9 +47,10 @@ class FizzBuzzTest {
 
         //Act:
         ArrayList<String> result = fizzBuzz.getFizzBuzz(startingNumber,endingNumber);
+        String expected = "Fizz";
 
         //Assert:
-        assertEquals("Fizz",result.getFirst());
+        assertEquals(expected,result.getFirst());
     }
 
     @Test
@@ -60,9 +63,10 @@ class FizzBuzzTest {
 
         //Act:
         ArrayList<String> result = fizzBuzz.getFizzBuzz(startingNumber,endingNumber);
+        String expected = "Buzz";
 
         //Assert:
-        assertEquals("Buzz",result.getFirst());
+        assertEquals(expected,result.getFirst());
     }
 
     @Test
@@ -75,9 +79,10 @@ class FizzBuzzTest {
 
         //Act:
         ArrayList<String> result = fizzBuzz.getFizzBuzz(startingNumber,endingNumber);
+        String expected = "FizzBuzz";
 
         //Assert:
-        assertEquals("FizzBuzz",result.getFirst());
+        assertEquals(expected,result.getFirst());
     }
 
 }
