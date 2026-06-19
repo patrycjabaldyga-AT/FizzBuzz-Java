@@ -1,18 +1,10 @@
-import javax.xml.transform.Result;
 import java.util.ArrayList;
 
 public class FizzBuzz {
-    static void main() {
-        try {
-            System.out.println(getFizzBuzz(1,20));
-        } catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-    }
 
-    public static ArrayList<String> getFizzBuzz(int startNumber, int endingNumber){
+    public ArrayList<String> getFizzBuzz(int startNumber, int endingNumber){
 
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<>();
 
         if (startNumber > endingNumber) {
             throw new IllegalArgumentException("Ending number is smaller than starting number!");
