@@ -6,9 +6,8 @@ public class FizzBuzz {
 
         ArrayList<String> result = new ArrayList<>();
 
-        if (startNumber > endingNumber) {
-            throw new IllegalArgumentException("Ending number is smaller than starting number!");
-        }
+        checkIfInputNumbersAreValid(startNumber, endingNumber);
+
         for (int i = startNumber; i <= endingNumber; i++){
             if (i % 3 == 0 && i % 5 == 0){
                 result.add("FizzBuzz");
@@ -21,5 +20,11 @@ public class FizzBuzz {
             }
         }
         return result;
+    }
+
+    private static void checkIfInputNumbersAreValid(int startNumber, int endingNumber) {
+        if (startNumber > endingNumber) {
+            throw new IllegalArgumentException("Ending number is smaller than starting number!");
+        }
     }
 }
